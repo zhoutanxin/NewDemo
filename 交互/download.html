@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>联系我们:010-52466853</title>
+    <link href="./css/layout.css" rel="stylesheet" type="text/css" />
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="regAndDownload">
+        <div class="triangle-topleft borderTop150 borderRight150 bctopFF0036"></div>
+        <div class="pabsolute to_index_txt" onclick="window.location='index.html'">
+            <p>
+                <span class="w180 shouye_txt">首页</span>
+                <span class="w180 home_txt fImpact">homepage</span>
+            </p>
+        </div>
+        <div id="contact_childdow">
+        	<p class="contlaongwodr">
+            	<span style="padding-right:100px;font-size:20px;">用应下载</span>
+            	<span class="triangledr-right"></span><br>
+                <span style="font-size:40px;font-family: Impact;">download</span>
+            </p>            
+            <div class="contlaongwodc">
+            	<div class="contlaongwodcl" id="contlaongwodcl">
+                    <div class="fdc1 fdc2c" id="cichang">运动磁场</div>
+                    <div class="blank"></div>
+                    <div class="fdc1" id="pa">企业记账</div>
+                    <div class="blank"></div>
+                </div>
+<script>
+	  $("#contlaongwodcl").children(".fdc1").mouseover(function(){
+		$(this).addClass("fdc2");
+	  }).mouseout(function() {
+		$(this).removeClass("fdc2");
+	  });
+    $("#pa").click(function(){
+        $("#app1").hide();
+        $("#app2").show();
+    });
+    $("#cichang").click(function(){
+        $("#app2").hide();
+        $("#app1").show();
+    });
+</script>
+                <div id="app1">
+                    <div class="contlaongwodcr">
+                        <div class="fdc1">运动磁场</div>
+                        <div class="fdc2">一家主要做品牌运动鞋的垂直电商网站，致力于为客户提供更专业,更有特色与彰显性格的运动品牌鞋。</div>
+                        <div class="fdc2">一家主要做品牌运动鞋的垂直电商网站，致力于为客户提供更专业,更有特色与彰显性格的运动品牌鞋。</div>
+                        <div class="fdc3"><div class="fcd1"><a href="javascript:;">Android版</a></div><div class="fcd1"><a href="javascript:;">iPhone版</a></div><div class="fcd1"><a href="javascript:;">网页版</a></div></div>
+                        <div class="fdc4"><img src="images/1.jpg"><img src="images/2.jpg"><img src="images/3.jpg"><img src="images/4.jpg"></div>
+                        <div class="fdc5">
+                            <div class="fcd1">
+                                Android V1.4 新版特性<br>
+                                更新时间2015-04-23<br>
+                                新增:问题反馈功能<br>
+                                优化：提升了诮用的稳定性，修复了一些bug
+                            </div>
+                            <div class="fcd1">
+                                iPhone V1.4新版特性<br>
+                                更新时间2015-10-08<br>
+                                新增：适配 ios 9<br>
+                                优化：修复了一些bug
+                            </div>
+                        </div>
+                        <div class="blank"></div>
+                    </div>
+                </div>
+                <div id="app2" style="display: none;">
+                    <div class="contlaongwodcr">
+                        <div class="fdc1">点账理财工具</div>
+                        <div class="fdc2">时钟拟物货的界面风格和动画，让时间的流动显得更为鲜活生动,世界时钏支持超过六百个城市，地区的当前时间与本地时差及天气信息。</div>
+                        <div class="fdc2">世界时钏会根据所在城市当天的日出日落时间改变表盘颜色。</div>
+                        <div class="fdc3"><div class="fcd1"><a href="javascript:;">Android版</a></div><div class="fcd1"><a href="javascript:;">iPhone版</a></div><div class="fcd1"><a href="javascript:;">网页版</a></div></div>
+                        <div class="fdc4"><img src="images/1.jpg"><img src="images/2.jpg"><img src="images/3.jpg"><img src="images/4.jpg"></div>
+                        <div class="fdc5">
+                            <div class="fcd1">
+                                Android V1.4 新版特性<br>
+                                更新时间2015-04-23<br>
+                                新增:问题反馈功能<br>
+                                优化：提升了诮用的稳定性，修复了一些bug
+                            </div>
+                            <div class="fcd1">
+                                iPhone V1.4新版特性<br>
+                                更新时间2015-10-08<br>
+                                新增：适配 ios 9<br>
+                                优化：修复了一些bug
+                            </div>
+                        </div>
+                        <div class="blank"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="erweimareg2"><img src="images/reg003.gif"></div>
+<div class="erweimareg1"><img src="images/reg001.gif"></div>
+</div>
+</div>
+</body>
+</html>

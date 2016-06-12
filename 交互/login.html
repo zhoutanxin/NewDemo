@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<link href="./css/layout.css" rel="stylesheet" type="text/css" />
+<script src="./js/jquery.js"></script>
+<script src="./js/index.js"></script>
+</head>
+
+<body>
+
+<!--</div>-->
+<div id='div_brg0001'></div>
+<div class="login" style="display:block;">
+    <div class="login_close"> Ⅹ </div>
+    <div class="loginFrom">
+        <div class="loginName">用户名称:<input type="text"></div>
+        <div class="loginPwd">用户密码:<input type="password"></div>
+        <div class="regbtn mt30" onclick="window.location.href='register.html'">用户注册</div>
+        <div class="regbtn nodisplay"  onclick="window.location.href='register.html'">找回密码</div>
+    </div>
+    <div class="loginbtn fRIWSYue">登录</div>
+
+</div>
+<script>
+    $(function(){
+        $("#div_brg0001").height($(document).height());
+        $("#div_brg0001").width($(document).width());
+        $("#div_brg0001").appendTo("body");
+        $("#div_brg0001").show();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DEMO交互演示</title>
+<link href="./css/layout.css" rel="stylesheet" type="text/css" />
+<script src="./js/jquery.js"></script>
+<script src="./js/index.js"></script>
+</head>
+
+<body>
+<!--<div class="menu">-->
+    <div class="top_menu">
+        <div class="top_menu_content" id="top1" onclick="index2About();"><span>关于我们<br>About</span></div>
+<!--        <div class="top_menu_content" id="top2" onclick="index2About();">经典案例</div>
+        <div class="top_menu_content" id="top3" onclick="index2About();">首页</div>-->
+    </div>
+
+
+    <div class="bottom_menu"><div class="bottom_menu_content" onclick="index2Anli();"><span>经典案例<br>Cases</span></div></div>
+
+    <!--<div class="middle_menu1">-->
+        <div class="middle_lf_menu">
+            <div class="lf_menu"><div class="lf_menu_content" onclick="goProdcut();"><p>产品服务<br/><span style="letter-spacing: 3px;">Service</span></p></div></div>
+        </div>
+        <div class="right_more_menu">
+            <div class="right_menu_txt" onclick="showRightMore();"><p>更多<br/>More</p></div>
+            <div class="right_menu_icon" style="display: none">
+                <div class="icon_box">
+                    <div class="dtable wper100">
+                        <div class="row w110 h90" onclick="window.location.href='download.html'">
+                            <div class="icon_cell">
+                                <span class="bg_kuang"></span>
+                                <div>应用下载</div>
+                            </div>
+                        </div>
+                        <div class="row w110 h90"  onclick="window.location.href='contactus.html'">
+                            <div class="icon_cell">
+                                <span class="bg_kuang"></span>
+                                <div>联系我们</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dtable wper100 icon_down">
+                        <div class="row w110 h70" onclick="alert(11)">
+                            <div class="icon_cell">
+                                <span class="bg_qq"></span>
+                            </div>
+                        </div>
+                        <div class="row w110 h70">
+                            <div class="icon_cell">
+                                <span class="bg_wx"></span>
+                            </div>
+                        </div>
+                        <div class="row w110 h70">
+                            <div class="icon_cell">
+                                <span class="bg_sina"></span>
+                            </div>
+                        </div>
+                        <div class="row w110 h70">
+                            <div class="icon_cell"  onclick="showLogin();">
+                                <span class="bg_login"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!--</div>-->
+
+    <!--<div class="middle_menu2" style="display: none;">-->
+        <div class="middle_rf_menu" style="display: none;">
+            <div class="rf_menu"><div class="rf_menu_content" onclick="goIndex();"><p>首页<br>Home</p></div></div>
+        </div>
+        <div class="left_more_menu" style="display: none;">
+            <div class="left_menu_txt" onclick="showLeftMore();"><p>更多<br/>More</p></div>
+            <div class="left_menu_icon" style="display: none">
+                <div class="icon_box">
+                    <div class="dtable wper100">
+                        <div class="row w110 h90" onclick="window.location.href='download.html'">
+                            <div class="icon_cell">
+                                <span class="bg_kuang"></span>
+                                <div>应用下载</div>
+                            </div>
+                        </div>
+                        <div class="row w110 h90" onclick="window.location.href='contactus.html'">
+                            <div class="icon_cell">
+                                <span class="bg_kuang"></span>
+                                <div>联系我们</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dtable w110 icon_down">
+                        <div class="row w110 h70" onclick="alert(11)">
+                            <div class="icon_cell">
+                                <span class="bg_qq"></span>
+                            </div>
+                        </div>
+                        <div class="row w110 h70">
+                            <div class="icon_cell">
+                                <span class="bg_wx"></span>
+                            </div>
+                        </div>
+                        <div class="row w110 h70">
+                            <div class="icon_cell">
+                                <span class="bg_sina"></span>
+                            </div>
+                        </div>
+                        <div class="row w110 h70"  onclick="showLogin();">
+                            <div class="icon_cell">
+                                <span class="bg_login"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!--</div>-->
+
+<!--</div>-->
+<div id='div_brg0001'></div>
+<div class="login" style="display: none">
+    <div class="login_close" onclick="showLogin();"> Ⅹ </div>
+    <div class="loginFrom">
+        <div class="loginName">用户名称:<input type="text"></div>
+        <div class="loginPwd">用户密码:<input type="password"></div>
+        <div class="regbtn mt30" onclick="window.location.href='register.html'">用户注册</div>
+        <div class="regbtn nodisplay"  onclick="window.location.href='register.html'">找回密码</div>
+    </div>
+    <div class="loginbtn fRIWSYue">登录</div>
+</div>
+<div id="container">
+
+    <div id="about">
+<!--        <div class="menu">
+            <div class="top_menu"><div class="top_menu_content" onclick="about2Anli();">经典案列</div></div>
+            <div class="middle_lf_menu">
+                <div class="lf_menu"><div class="lf_menu_content" onclick="about2Product();">产品服务</div></div>
+
+            </div>
+            <div class="bottom_menu"><div class="anli_menu_content" onclick="about2Index();">首页</div></div>
+
+            <div class="right_menu">
+
+                <div class="more_menu_content">
+                    <div class="right_menu_txt" onclick="showRightMore();">更多</div>
+                    <div class="right_menu_icon" style="display: none">ICON</div>
+                </div>
+            </div>
+        </div>-->
+
+        <div id="about_child">
+            <div class="about_txt">
+                <span>公司简介</span>
+                <p>多维矩阵网络科技,成立于2012年,公司一直秉持着，踏实，务实，责任，担当，求新，求是的态度，致力于为传统企业提供更快更好的互联网产品。 以及根据组织或个人提供的需求,定向的向机构或个人提供个性的行业解决方案以及设计与制作服务,从而帮助组织或个人提高企业效益与市场竞争力。</p>
+
+                <span  class="mt30">我们的优势</span>
+                <P>一流的专业团队。我们有优秀的美工设计，卓越的视觉效果策划师，引领web2.0交互新体验，以及优秀的数据建模师，简化操作内容，优化操作流程，过硬的软件工程师,由浅入深,化繁为简,让产品运行更稳健。</P>
+
+               <p> 良好的口碑与案例。在我们未成立工作室之前我们已经与多家公司建立过合作,并开展过工作，而且赢得了他们良好的口碑与形象，这使我们有勇气和信心开办好工作室的前提。</p>
+
+                <p> 有力的执行。我们有统一的工作流程，以及与之相适应的工作进度跟进指标,让工程在规划的时间内有力的完成，同时我们准备了预备方案，在遇到突发问题也能及时沟通协调解决，以免在工程交付过程中，造成不必要的损失。</p>
+
+                <p>满意的后续跟进与服务。在我们交付产品之后,会定期的跟进与回访客户在实际操作或体验的过程遇到的各种问题加以收集与解决，让客户的价值最大限度的得到保证。</P>
+
+                <span class="mt30">我们的使命</span>
+                <p>启蒙思想,启发心智,追求卓越,创造快乐,合作共赢，构筑和谐。</p>
+                <div class="pattern">
+                    <img src="./images/logos/alex1.png">
+                    <img src="./images/logos/alex2.png">
+                    <img src="./images/logos/archiq.png">
+                    <img src="./images/logos/thomsoon.png">
+                </div>
+            </div>
+            <div class="about_right">
+                <div class="about_logo"><img src="./images/logo_03.png"></div>
+                <div class="about_position ">
+                    <p class="fsize16 fRIWSYue m0"><img src="images/arrow_left.gif" >关于我们</p>
+                    <p class="fsize40 fImpact m0">About</p>
+                </div>
+                <div class="about_thanks mt120">
+                    <p class="fsize16 fRIWSYue lspacing2 m0"><img src="./images/arrow_left.gif">合作鸣谢</p>
+                    <p class="fsize40 fImpact lspacing2 m0">Thanks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="index">
+        <div id="mainContent">
+<!--            <div class="menu">
+                <div class="top_menu"><div class="top_menu_content" onclick="index2About();">关于我们</div></div>
+                <div class="middle_lf_menu">
+                    <div class="lf_menu"><div class="lf_menu_content" onclick="goProdcut();">产品服务</div></div>
+
+                </div>
+                <div class="bottom_menu"><div class="anli_menu_content" onclick="index2Anli();">经典案列</div></div>
+
+                <div class="right_menu">
+
+                    <div class="right_more_menu">
+                        <div class="right_menu_txt" onclick="showRightMore();">更多</div>
+                        <div class="right_menu_icon" style="display: none">ICON</div>
+                    </div>
+                </div>
+            </div>-->
+
+            <div id="index_child">
+                <div class="logo"><img src="./images/logo_03.png" onclick="showRightMore()"></div>
+                <div class="index_txt">
+                    <p class="big_txt">从心出发，始于传承</p>
+                    <p class="small_txt">一切的探索与发现，源于对真理的演绎与重现</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div id="product">
+
+            <img src="images/bg_product.png" style="position: absolute;width: 100%;height: 100%;z-index: 4">
+<!--            <div class="menu">
+                <div class="top_menu"><div class="top_menu_content" onclick="product2About();">关于我们</div></div>
+                <div class="middle_rf_menu">
+                    <div class="rf_menu"><div class="rf_menu_content" onclick="goIndex();">首页</div></div>
+                </div>
+                <div class="bottom_menu"><div class="anli_menu_content" onclick="product2Anli();">经典案列</div></div>
+                <div class="left_menu">
+
+                    <div class="left_more_menu">
+                        <div class="left_menu_txt" onclick="showLeftMore();">更多</div>
+                        <div class="left_menu_icon" style="display: none">ICON</div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="fr">
+                <!--<div class="triangle-topright">-->
+                <!--</div>-->
+                <img src="./images/bg_about.jpg" width="400px" height="400px" >
+            </div>
+            <div id="product_child">
+                <div class="anli_position">
+                    <p class="fsize16 fRIWSYue lspacing2 m0 fc64">产品服务<span class="triangle-right definedTri"></span></p>
+                    <p class="fsize40 fImpact m0 mt-8 fc64">Service</p>
+                </div>
+                <div class="product_context">
+                    <div class="product_left">
+                        <div><img src="images/product_icon_03.png"></div>
+                        <div>
+                            <div class="txt_title">云帆建站</div>
+                            <div class="txt_css">基于SaaS设计原则,为企业提供高效快速的建站服务,以及终生免费升级使用和指导服务,帮助客户快速实现互联网业务</div>
+                        </div>
+                        <div class="tc mt10" >
+                            <span class="smallbtn" onclick="window.location.href='solutions.html'">在线建站</span><br/>
+                            <span class="smallbtn mt10">服务购买</span>
+                        </div>
+                    </div>
+                    <div class="product_middle">
+                        <div><img src="images/product_icon_04.png"></div>
+                        <div>
+                            <div class="txt_title">UI设计/制作</div>
+                            <div class="txt_css">根据机构或个人的需求说明,提供个性化的UI界面设计与制作服务,帮助客户提升软件或应用的交互体验</div>
+                        </div>
+                        <div class="tc mt10" >
+                            <span class="smallbtn">报价下载</span><br/>
+                            <span class="smallbtn mt10">购买</span>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <div><img src="images/product_icon_05.png"></div>
+                        <div>
+                            <div class="txt_title">Android定制</div>
+                            <div class="txt_css">根据机构或个人提供的接口和需求,定向的给客户提供相关的Android平台应用服务,帮助客户快速实现移动互联网化</div>
+                        </div>
+
+                        <div class="tc mt10" >
+                            <span class="smallbtn">咨询</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pabsolute ptop100 mt-400">
+                <!--<div class="triangle-bottomleft"></div>-->
+                <img src="./images/bg_about.jpg" width="400px" height="400px" >
+            </div>
+        </div>
+
+    </div>
+
+  <div id="anli">
+<!--      <div class="menu">
+          <div class="top_menu"><div class="top_menu_content" onclick="anli2Index();">首页</div></div>
+          <div class="middle_lf_menu">
+              <div class="lf_menu"><div class="lf_menu_content" onclick="anli2Prodcut();">产品服务</div></div>
+
+          </div>
+          <div class="bottom_menu"><div class="anli_menu_content" onclick="anli2About();">关于我们</div></div>
+
+          <div class="right_menu">
+
+              <div class="more_menu_content">
+                  <div class="right_menu_txt" onclick="showRightMore();">更多</div>
+                  <div class="right_menu_icon" style="display: none">ICON</div>
+              </div>
+          </div>
+      </div>-->
+      <div id="anli_child">
+          <div class="anli_position">
+              <p class="fsize16 fRIWSYue lspacing2 m0">经典案例<img src="./images/arrow_left.gif"></p>
+              <p class="fsize40 fImpact lspacing2 m0 mt-8">Cases</p>
+          </div>
+          <div class="dtable">
+              <div class="row">
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+              </div>
+              <div class="row">
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+              </div>
+              <div class="row">
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+                  <div class="cell"><img src="images/portfolio/1.png"></div>
+              </div>
+          </div>
+          <div class="talignR fsize14 fRIWSYue mr15" onclick="alert(11);">More Cases 更多案例&nbsp;&nbsp;></div>
+      </div>
+  </div>
+
+</div>
+
+</body>
+</html>
