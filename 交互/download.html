@@ -35,14 +35,25 @@
 	  }).mouseout(function() {
 		$(this).removeClass("fdc2");
 	  });
-    $("#pa").click(function(){
-        $("#app1").hide();
-        $("#app2").show();
-    });
-    $("#cichang").click(function(){
-        $("#app2").hide();
-        $("#app1").show();
-    });
+      $(function(){
+          $("#pa").bind("click",function(){
+              $("#cichang").removeClass("fdc2c");
+              $("#pa").removeClass("fdc2c");
+              $("#pa").addClass("fdc2c");
+              $("#app1").hide();
+              $("#app2").show();
+
+          });
+          $("#cichang").bind("click",function(){
+              $("#pa").removeClass("fdc2c");
+              $("#cichang").removeClass("fdc2c");
+              $("#cichang").addClass("fdc2c");
+              $("#app2").hide();
+              $("#app1").show();
+
+          });
+      });
+
 </script>
                 <div id="app1">
                     <div class="contlaongwodcr">
