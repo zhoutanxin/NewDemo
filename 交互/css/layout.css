@@ -170,7 +170,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
 
 .cell {
     display: table-cell;
-    width: 25%;
+    width: 26%;
     height: 120px;
     border: 1px solid none;
     padding: 5px;
@@ -1200,7 +1200,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
 .contlaongwodreg .fdc7{ width:204px; height:40px;padding-left:236px;}
 .contlaongwodreg .fdc7 a{ width:204px; height:40px; line-height:40px; text-align:center; font-size:18px; color:#fff; background:#fe0036; float:left;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px; text-decoration:none;}
 
-.erweimareg1{position: absolute;top: 100%;margin-top: -409px;left: 0;}
+.erweimareg1{position: absolute;top: 100%;margin-top: -409px;left: 0;z-index: -99;}
 .erweimareg2{position: absolute;top: 0;left: 100%;margin-left: -363px;}
 .erweimareg2 img{ width:363px; height:408px;}
 .erweimareg3{position: absolute;top: 0;left: 100%; background:url(images/reg002.gif) no-repeat;}

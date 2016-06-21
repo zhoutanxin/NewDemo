@@ -53,14 +53,37 @@
 
           });
       });
+      function  showImg(){
+          $("#androidApp").show();
 
+      }
+      function hideImg(){
+          $("#androidApp").hide();
+      }
+      function  showIphoneImg(){
+          $("#iphoneApp").show();
+
+      }
+      function hideIphoneImg(){
+          $("#iphoneApp").hide();
+      }
 </script>
                 <div id="app1">
                     <div class="contlaongwodcr">
                         <div class="fdc1">运动磁场</div>
                         <div class="fdc2">一家主要做品牌运动鞋的垂直电商网站，致力于为客户提供更专业,更有特色与彰显性格的运动品牌鞋。</div>
                         <div class="fdc2">一家主要做品牌运动鞋的垂直电商网站，致力于为客户提供更专业,更有特色与彰显性格的运动品牌鞋。</div>
-                        <div class="fdc3"><div class="fcd1"><a href="javascript:;">Android版</a></div><div class="fcd1"><a href="javascript:;">iPhone版</a></div><div class="fcd1"><a href="javascript:;">网页版</a></div></div>
+                        <div class="fdc3">
+                            <div class="fcd1" onMouseOut="hideImg()"  onmouseover="showImg()"><a href="javascript:;">Android版</a></div>
+                            <div class="fcd1"  onMouseOut="hideIphoneImg()"  onmouseover="showIphoneImg()"><a href="javascript:;">iPhone版</a></div>
+                            <div class="fcd1"><a href="javascript:;">网页版</a></div>
+                        </div>
+                        <div id="androidApp" style="width:200px;height:200px;position: absolute;border: 2px solid rgb(254, 0, 54);margin-top: 5px;display: none;">
+                            <img src="./images/erweima.gif" style="width: 100%;">
+                        </div>
+                        <div id="iphoneApp" style="margin-left:165px;width:200px;height:200px;position: absolute;border: 2px solid rgb(254, 0, 54);margin-top: 5px;display: none;">
+                            <img src="./images/erweima.gif" style="width: 100%;">
+                        </div>
                         <div class="fdc4"><img src="images/1.jpg"><img src="images/2.jpg"><img src="images/3.jpg"><img src="images/4.jpg"></div>
                         <div class="fdc5">
                             <div class="fcd1">
@@ -84,7 +107,14 @@
                         <div class="fdc1">点账理财工具</div>
                         <div class="fdc2">时钟拟物货的界面风格和动画，让时间的流动显得更为鲜活生动,世界时钏支持超过六百个城市，地区的当前时间与本地时差及天气信息。</div>
                         <div class="fdc2">世界时钏会根据所在城市当天的日出日落时间改变表盘颜色。</div>
-                        <div class="fdc3"><div class="fcd1"><a href="javascript:;">Android版</a></div><div class="fcd1"><a href="javascript:;">iPhone版</a></div><div class="fcd1"><a href="javascript:;">网页版</a></div></div>
+                        <div class="fdc3">
+                            <div class="fcd1"  onMouseOut="(function(){$('#androidApp2').hide();})();"  onmouseover="(function(){$('#androidApp2').show();})();"><a href="javascript:;">Android版</a></div>
+                            <div class="fcd1"><a href="javascript:;" style="background:#c8c8c8;">iPhone版</a></div>
+                            <div class="fcd1"><a href="javascript:;">网页版</a></div>
+                        </div>
+                        <div id="androidApp2" style="width:200px;height:200px;position: absolute;border: 2px solid rgb(254, 0, 54);margin-top: 5px;display: none;">
+                            <img src="./images/erweima.gif" style="width: 100%;">
+                        </div>
                         <div class="fdc4"><img src="images/1.jpg"><img src="images/2.jpg"><img src="images/3.jpg"><img src="images/4.jpg"></div>
                         <div class="fdc5">
                             <div class="fcd1">
