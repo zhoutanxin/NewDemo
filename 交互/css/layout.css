@@ -378,7 +378,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
     width: 200px;
     height: 100px;
     text-align: center;
-    background-image: url("../images/arrow_down.gif");
+    background-image: url("../images/arrow_down.png");
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 25px;
@@ -406,7 +406,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
 .lf_menu_content{
     width: 100px;
     height: 200px;
-    background-image: url("../images/arrow_right.gif");
+    background-image: url("../images/arrow_right.png");
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 25px;
@@ -442,7 +442,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
     margin-top:-150px;
     width: 100px;
     height: 200px;
-    background-image: url("../images/arrow_left.gif");
+    background-image: url("../images/arrow_left.png");
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 25px;
@@ -578,7 +578,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
 .rf_menu_content{
     width: 100px;
     height: 200px;
-    background-image: url("../images/arrow_left.gif");
+    background-image: url("../images/arrow_left.png");
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 25px;
@@ -620,7 +620,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
     /*text-align: center;*/
     width: 100px;
     height: 200px;
-    background-image: url("../images/arrow_right.gif");
+    background-image: url("../images/arrow_right.png");
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 25px;
@@ -653,7 +653,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
     width: 200px;
     height: 100px;
     text-align: center;
-    background-image: url("../images/arrow_up.gif");
+    background-image: url("../images/arrow_up.png");
     background-size: contain;
     background-repeat: no-repeat;
     line-height: 25px;
@@ -1004,7 +1004,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
     margin-top:-175px;
     padding-top: 75px;
     padding-left:10px;
-    background-image: url("../images/arrow_left.gif");
+    background-image: url("../images/arrow_left.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1029,7 +1029,7 @@ body { font-family:Verdana; font-size:14px; margin:0;height:100%;overflow-x: hid
     /*padding-left:10px;*/
     margin-left: 5px;
 
-    background-image: url("../images/arrow_right.gif");
+    background-image: url("../images/arrow_right.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
